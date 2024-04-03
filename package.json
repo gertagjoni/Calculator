@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator with e2e testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open":"cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.1"
+  }
+}

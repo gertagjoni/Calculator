@@ -12,7 +12,8 @@ function clearDisplay(){
 
 function calculate(){
     try{
-        display.value = eval(display.value);
+        let processedValue = display.value.replace(/\b0+(\d+)/g, '$1');
+        display.value = eval(processedValue);
     }
     catch(error){
         display.value = "Error";

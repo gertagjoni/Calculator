@@ -1,0 +1,29 @@
+name: Run Automated Cypress Tests
+
+on: [push, pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '21.6.1' 
+
+    - name: Install dependencies
+      run: npm install
+
+    # Shtoni këtë hap nëse projekti juaj ka nevojë për një hap ndërtimi
+    # - name: Ndërtimi
+    #   run: npm run build
+
+    - name: Ekzekutimi i Testeve të Cypress
+      uses: cypress-io/github-action@v2
+      with:
+        start: npm start # Komanda për të nisur serverin tuaj
+        wait-on: ' https://gertagjoni.github.io/Calculator/'
+        wait-on-timeout: 60 # sekonda

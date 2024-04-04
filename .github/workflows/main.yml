@@ -24,6 +24,5 @@ jobs:
     - name: Ekzekutimi i Testeve të Cypress
       uses: cypress-io/github-action@v2
       with:
-        start: npm start # Komanda për të nisur serverin tuaj
-        wait-on: ' https://gertagjoni.github.io/Calculator/'
+        wait-on: 'https://gertagjoni.github.io/Calculator/'
         wait-on-timeout: 60 # sekonda

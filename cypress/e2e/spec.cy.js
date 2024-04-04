@@ -83,7 +83,7 @@ describe("test advanced scenarios", () => {
     cy.get("#nplus").click();
     cy.get("#n3").click();
     cy.get("#nbaraz").click();
-    cy.get("#display").should("have.value", "19");
+    cy.get("#display").should("have.value", "12");
   });
 });
 

@@ -3,7 +3,7 @@
 // calculator visual appareance
 describe("calculator visual appareance ", () => {
   beforeEach(() => {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit(" https://gertagjoni.github.io/Calculator/");
   });
   // 1.test that the calculator contains all the elements
   it("test that the calculator contains all the elements", () => {
@@ -27,7 +27,7 @@ describe("calculator visual appareance ", () => {
 
 describe("test basic operations", () => {
   beforeEach(() => {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit(" https://gertagjoni.github.io/Calculator/");
   });
 
   // 2.test the sum of two numbers
@@ -70,7 +70,7 @@ describe("test basic operations", () => {
 // test advanced scenarios
 describe("test advanced scenarios", () => {
   beforeEach(() => {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit(" https://gertagjoni.github.io/Calculator/");
   });
 
   //.test combined operations
@@ -90,7 +90,7 @@ describe("test advanced scenarios", () => {
 //.test two-digit math operations
 describe("test two-digit math operations", () => {
   beforeEach(() => {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit(" https://gertagjoni.github.io/Calculator/");
   });
 
   it("test two-digit math operations", () => {
@@ -106,7 +106,7 @@ describe("test two-digit math operations", () => {
 // test numbers starting with 0.
 describe("test numbers starting with 0", () => {
   beforeEach(() => {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit(" https://gertagjoni.github.io/Calculator/");
   });
   it("test numbers starts with 0",() => {
     cy.get("#n0").click();

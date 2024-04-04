@@ -24,6 +24,6 @@ jobs:
     - name: Ekzekutimi i Testeve të Cypress
       uses: cypress-io/github-action@v2
       with:
-        start: npm run cypress:open --config-file=cypress.config.js
+        start: npm run cypress run --config-file=cypress.config.js
         wait-on: 'https://gertagjoni.github.io/Calculator/'
         wait-on-timeout: 60 # sekonda
